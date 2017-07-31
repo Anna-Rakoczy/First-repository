@@ -1,0 +1,604 @@
+/* imports */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+/* reset css */
+
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, 
+caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset,
+figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup,
+html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, 
+object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, 
+sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, 
+hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+mark {
+	background-color: transparent;
+}
+
+a, ins, del {
+	text-decoration: none;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+caption, th {
+	text-align: left;
+}
+
+q:after, q:before {
+	content: "";
+}
+
+/* structural section */ 
+
+* {
+	box-sizing: border-box;
+}
+
+[class*="col-"] {
+	width: 100%;
+	float: left;
+	min-height: 1px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.row::before, 
+.row::after {
+    content:"";
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+.row {
+    zoom: 1; 
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container-wide {
+	width: 100%;
+}
+
+/* nav section */
+
+header {
+	background-color: #313332;
+	height: 50px;
+}
+
+header > nav > ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header > nav > img {
+	padding: 10px 0;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+
+ul > li > a {
+	display: block;
+	height: 50px;
+	padding: 12px 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+ul > li > a:hover {
+	color: #08C5EC;
+}
+
+/* jumbotron section */
+
+section {
+	padding: 200px;
+	background: url("https://www.proify.com/wp-content/uploads/2016/12/landscape-photography-competition.jpg") 50% 15%;
+	background-size: cover;
+}
+
+
+.hero {
+	position: relative;
+}
+
+
+.slogan {
+	margin-top: 110px;
+	height: auto;
+	right: 0;
+	top: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.slogan h1 {
+	padding: 10px;
+	margin-top: 0;
+	padding-right: 300px;
+	height: auto;
+	background-color: rgba(0,0,0,.7);
+	font-size: 30px;
+	font-weight: 300;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slogan h2 {
+	padding: 10px;
+	padding-right: 300px;
+	height: auto;
+	background-color: rgba(0,0,0,.7);
+	font-size: 30px;
+	font-weight: 800;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* icons section */
+
+.icon {
+	display: inline-block;
+	font-size: 70px;
+	text-align: center;
+}
+
+.icon .paragraph {
+	font-size: 15px;
+	margin: 20px;
+	color: #BBBBBB;
+	line-height: 25px;
+	font-weight: 300;
+}
+
+.icon .title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+	color: #313332;
+	margin-bottom: 10px;
+}
+
+.icon [class^="fa"] {
+	display: inline-block;
+	font-size: 60px;
+	text-align: center;
+	line-height: 100px;
+	width: 100px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	background-color: #313332;
+	color: #FFF;
+	max-height: 100px;
+}
+
+.icon:hover i {
+	cursor: pointer;
+	background-color: #08C5EC;
+	transition: ease-in-out .3s;
+}
+
+/* featured section */
+
+.featured .title {
+	margin-bottom: 17px;
+	margin-top: 25px;
+	text-align: center;
+	font-size: 40px;
+	color: #313332;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.featured .paragraph {
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: #BBBBBB;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 300;
+}
+
+.icon:hover p.title {
+	cursor: pointer;
+	color: #08C5EC;
+	transition: ease-in-out .3s;
+}
+
+/* gallery section */ 
+
+.gallery {
+	padding: 0;
+}
+
+.image img {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 210px;
+	z-index: 1;
+	object-fit: cover;
+}
+
+.image {
+	position: relative;	
+}
+
+.layer {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	opacity: 0;	
+}
+
+.small-icons {
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #000;
+	line-height: 210px;
+}
+
+.small-icons i.fa {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gallery .image .layer:hover {
+	opacity: 1;
+	color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* workers section */
+
+.workers {
+	padding: 50px 0;
+}
+
+.circle img {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	border-radius: 50%; 
+	height: 100%;
+	object-fit: cover;
+}
+
+.circle {
+	position: relative;	
+	height: 180px;
+	width: 180px;
+	display: inline-block;
+	text-align: center;
+	float: left;
+	margin-left: 100px;
+	border: 1px solid red;
+}
+
+.name {
+	text-align: center;
+	border: 1px solid blue;
+}
+
+.layer-2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 45%;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 50%; 
+	bottom: 0;
+	left: 0;
+	opacity: 0;	
+}
+
+.workers .circle .layer-2:hover {
+	opacity: 1;
+	color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+	
+/* tablet section */
+
+.tablet {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding: 60px;
+	background: url("https://www.proify.com/wp-content/uploads/2016/12/landscape-photography-competition.jpg");
+	background-size: cover;
+	max-height: 330px;
+	overflow: hidden;
+    position: relative;
+}
+
+.picture img {
+	position: absolute;
+	width: 25%;
+}
+
+.awesome-title {
+	margin: 0;
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-weight: 800;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.awesome-paragraph {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 300;
+	color: #FFF;
+}
+
+/* numbers section */
+
+.numbers {
+	margin: 50px 0;
+}
+
+.numb-title {
+	font-size: 60px;
+	font-weight: 800;
+	color: #313332;
+	text-align: center;
+}	
+
+.numb-description {
+	font-size: 15px;
+	font-weight: 400;
+	color: #29CFEA;
+	text-align: center;
+	text-transform: uppercase;
+}	
+
+/* footer section */
+
+.footer {
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #313332;
+	color: white;
+}
+
+.about, 
+.touch, 
+.social {
+	padding: 10px;
+}
+
+.about-title, 
+.touch-title, 
+.social-title {
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.about-paragraph, 
+.touch-paragraph, 
+.social-paragraph {
+	font-weight: 300;
+	font-size: 13px;
+	margin: 15px 5px;
+	color: #C1C3C2;
+}
+
+.footer [class^="fa"] {
+	display: inline-block;
+	font-size: 20px;
+	padding: 1px;
+	text-align: center;
+	background-color: #01C5E6;
+	color: #FFF;	
+	line-height: 30px;
+	width: 30px;
+	margin: 3px;
+}
+
+.touch-sub-title {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 13px;
+	color: #C1C3C2;
+}
+
+.touch-sub-des {
+	display: inline-block;
+	font-weight: 300;
+	width: 200px;
+	height: 60px;
+	font-size: 13px;
+	color: #C1C3C2;
+	padding: 2px;
+}
+
+/* copyrights section */
+
+.copyrights {
+	font-size: 13px;
+	color: #C1C3C2;
+	text-align: center;
+	padding: 20px;
+	background-color: #252726;
+}
+
+/* mobile first */
+
+@media (max-width: 767px) {
+	/* for phones and tablets: */
+	
+.col-s-1 {width: 8.33%;}
+.col-s-2 {width: 16.66%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33%;}
+.col-s-5 {width: 41.66%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33%;}
+.col-s-8 {width: 66.66%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33%;}
+.col-s-11 {width: 91.66%;}
+.col-s-12 {width: 100%;}
+  
+header {
+	height: 45vh;
+}
+  
+header > nav > ul {
+	float: none;
+}	
+
+nav > ul > li {
+	display: block;
+	text-align: center;
+}
+
+header > nav > img {
+	display: block;
+	margin: 0 auto;
+}
+
+ul > li > a {
+	padding: 0;
+	height: 35px;
+}
+
+section {
+	padding: 160px;
+}
+
+.hero {
+	position: relative;
+}
+
+.slogan {
+	margin: 100px;
+	left: 0;
+}
+
+.slogan h1 {
+	padding: 10px;
+	margin-top: 0;
+	text-align: center;
+}
+
+.slogan h2 {
+	padding: 10px;
+	text-align: center;
+}
+
+.gallery .image .layer {
+	opacity: 1;
+	color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.circle {
+	float: none;
+	display: block;
+	margin: 20px auto;
+}
+
+.workers .circle .layer-2 {
+	opacity: 1;
+	color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tablet {
+	padding: 10px;
+}
+
+.picture img {
+	width: 30%;
+}
+
+.awesome-title {
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.awesome-paragraph {
+	margin-left: 20px;
+	font-size: 10px;
+}
+
+}
