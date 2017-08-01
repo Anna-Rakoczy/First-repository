@@ -1,0 +1,26 @@
+{
+  "name": "kodilla-grunt-example",
+  "version": "1.0.0",
+  "description": "example grunt project",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anna-Rakoczy/First-repository.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Anna Rakoczy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anna-Rakoczy/First-repository/issues"
+  },
+  "homepage": "https://github.com/Anna-Rakoczy/First-repository#readme",
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
